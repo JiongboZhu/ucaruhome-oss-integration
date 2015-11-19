@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+
+<configuration>
+	
+	<!-- The key to open the door of OSS  -->
+	<host>http://oss-cn-hangzhou.aliyuncs.com</host>
+	<accessid></accessid>
+	<accesskey></accesskey>
+	
+	<!-- the bucket which used to hold all testing data -->
+	<bucket></bucket>
+	
+	<!-- put object with the length of 4K/16K randomly -->
+	<rand-put-4K>
+		<size>4096</size>
+		<putthread>3</putthread>
+		<getthread>0</getthread>
+		<time>300</time>
+	</rand-put-4K>
+    <rand-put-16K>
+        <size>16384</size>
+        <putthread>3</putthread>
+        <getthread>0</getthread>
+        <time>300</time>
+    </rand-put-16K>
+    
+    <!-- get object with the length of 4K/16K randomly -->
+	<rand-get-4K>
+		<size>4096</size>
+		<putthread>3</putthread>
+		<getthread>0</getthread>
+		<time>300</time>
+	</rand-get-4K>
+    <rand-get-16K>
+        <size>16384</size>
+        <putthread>3</putthread>
+        <getthread>0</getthread>
+        <time>300</time>
+    </rand-get-16K>
+    
+    <!-- put/get object with the length of 4K/16K mixedly and randomly -->
+	<rand-put-and-get-4K>
+		<size>4096</size>
+		<putthread>3</putthread>
+		<getthread>3</getthread>
+		<time>300</time>
+	</rand-put-and-get-4K>
+    <rand-put-and-get-16K>
+        <size>16384</size>
+        <putthread>3</putthread>
+        <getthread>3</getthread>
+        <time>300</time>
+    </rand-put-and-get-16K>
+    
+    <!-- put object with the length of 64K/512K/1M sequentially -->
+	<seq-put-64K>
+		<size>65536</size>
+		<putthread>1</putthread>
+		<getthread>0</getthread>
+		<time>300</time>
+	</seq-put-64K>
+    <seq-put-512K>
+        <size>524288</size>
+        <putthread>1</putthread>
+        <getthread>0</getthread>
+        <time>300</time>
+    </seq-put-512K>
+    <seq-put-1M>
+        <size>1048576</size>
+        <putthread>1</putthread>
+        <getthread>0</getthread>
+        <time>300</time>
+    </seq-put-1M>
+    
+    <!-- get object with the length of 64K/512K/1M sequentially -->
+	<seq-get-64K>
+		<size>65536</size>
+		<putthread></putthread>
+		<getthread>1</getthread>
+		<time>300</time>
+	</seq-get-64K>
+    <seq-get-512K>
+        <size>524288</size>
+        <putthread>0</putthread>
+        <getthread>1</getthread>
+        <time>300</time>
+    </seq-get-512K>
+    <seq-get-1M>
+        <size>1048576</size>
+        <putthread>0</putthread>
+        <getthread>1</getthread>
+        <time>300</time>
+    </seq-get-1M>
+    
+    <!-- put/get object with the length of 64K/512K/1M mixedly and sequentially -->
+	<seq-put-and-get-64K>
+		<size>65536</size>
+		<putthread>1</putthread>
+		<getthread>1</getthread>
+		<time>300</time>
+	</seq-put-and-get-64K>
+    <seq-put-and-get-512K>
+        <size>524288</size>
+        <putthread>1</putthread>
+        <getthread>1</getthread>
+        <time>300</time>
+    </seq-put-and-get-512K>
+    <seq-put-and-get-1M>
+        <size>1048576</size>
+        <putthread>1</putthread>
+        <getthread>1</getthread>
+        <time>300</time>
+    </seq-put-and-get-1M>
+</configuration>

@@ -1,0 +1,2 @@
+1、修改配置文件runner_conf.xml，填写host、accessid、accesskey、bucket；
+2、运行命令：java -jar Perftest.jar <读写类型>，读写类型选项：rand-put-4K、rand-put-16K、rand-get-4K、rand-get-16K、rand-put-and-get-4K、rand-put-and-get-16K、seq-put-64K、seq-put-512K、seq-put-1M、seq-get-64K、seq-get-512K、seq-get-1M、seq-put-and-get-64K、seq-put-and-get-512K、seq-put-and-get-1M
