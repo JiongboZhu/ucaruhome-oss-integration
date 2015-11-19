@@ -29,5 +29,3 @@ TODO:
 根据Objectkey获取URL
 曹传奎
 623562021@qq.com
-
-竺炯波
