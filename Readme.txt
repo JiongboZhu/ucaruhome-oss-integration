@@ -28,3 +28,7 @@ http://www.aliyun.com
 TODO:
 根据Objectkey获取URL
 
+
+https://github.com/JiongboZhu/ucaruhome-oss-integration.git
+https://github.com/JiongboZhu/ucaruhome-hchh.git
+
