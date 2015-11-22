@@ -27,5 +27,4 @@ http://www.aliyun.com
 
 TODO:
 根据Objectkey获取URL
-曹传奎
-623562021@qq.com
+
